@@ -1,4 +1,4 @@
-#**Python password generator on PyInquirer**
+# **Python password generator on PyInquirer**
 
 Requirements:
 
