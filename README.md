@@ -9,8 +9,8 @@
 
 ## Installation
 
-```
-pip3 install git+https://github.com/k4m454k/PyPasswordGenerator@master
+``` bash
+$ pip3 install git+https://github.com/k4m454k/PyPasswordGenerator@master
 ```
 
 ## Usage
