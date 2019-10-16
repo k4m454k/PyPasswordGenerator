@@ -6,7 +6,7 @@ from password_generator import __version__
 setup(
     name='passgen',
     version=__version__,
-    url='https://github.com/k4m454k/PyPasswordGenerator/tree/master/PyPasswordGenerator',
+    url='https://github.com/k4m454k/PyPasswordGenerator/tree/master/password_generator',
     packages=find_packages(),
     install_requires=open('requirements.txt').read().split(),
     entry_points={
