@@ -1,6 +1,7 @@
 import string
 import random
 from functools import partial
+from os import path
 from PyInquirer import prompt, style_from_dict, Token, Validator, ValidationError
 
 STYLE_SHEET_CHECKBOX = style_from_dict({
@@ -113,6 +114,7 @@ def pass_save_request(passwords):
 def add_password_to_file(password, filename=PASSWORDS_FILENAME):
     with open(filename, 'a') as f:
         f.write(f"{password}\n")
+    print(f'password saved to {path.abspath(filename)}')
 
 
 def entrypoint():
