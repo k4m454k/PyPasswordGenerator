@@ -8,6 +8,7 @@ setup(
     version=__version__,
     url='https://github.com/k4m454k/PyPasswordGenerator/tree/master/password_generator',
     packages=find_packages(),
+    python_requires='>3.5',
     install_requires=open('requirements.txt').read().split(),
     entry_points={
         'console_scripts': [
