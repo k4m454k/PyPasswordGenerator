@@ -115,7 +115,7 @@ def add_password_to_file(password, filename=PASSWORDS_FILENAME):
         f.write(f"{password}\n")
 
 
-if __name__ == '__main__':
+def entrypoint():
     symbols_answer_list = []
     while not symbols_answer_list:
         symbols_answer_list = symbols_request()['symbols']
@@ -126,3 +126,7 @@ if __name__ == '__main__':
     passwords = generate_pass(symbols, pass_len)
     password_to_save = pass_save_request(passwords)['password']
     add_password_to_file(password_to_save)
+
+
+if __name__ == '__main__':
+    entrypoint()
